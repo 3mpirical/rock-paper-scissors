@@ -26,7 +26,7 @@ const CTRL = (function(MDL, VIEW) {
             else if(event.target.classList.contains("scissors")) userPick = "scissors";
             else console.log("ERROR: invalid element selected in handleSelection");
     
-            let compPick = ["rock", "paper", "scissors"][Math.round(Math.random()*2)];
+            let compPick = ["rock", "paper", "scissors"][Math.floor(Math.random()*3)];
             console.log(compPick);
             switch(true) {
                 case(userPick === compPick):
@@ -102,8 +102,6 @@ const CTRL = (function(MDL, VIEW) {
 
     return {
         initializeGame,
-        userSelection,
-        handleSelection,
     };
 } (MDL, VIEW) );
 
