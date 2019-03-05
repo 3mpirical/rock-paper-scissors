@@ -1,12 +1,15 @@
 
 const MDL = (function() {
-    const selection = "rock";
+    let playerScore = 0;
+    let compScore = 0;
+    let exited = false;
 
 
-    
 
     return {
-        selection
+        playerScore,
+        compScore,
+        exited,
     };
 } () );
 

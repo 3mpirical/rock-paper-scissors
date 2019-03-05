@@ -14,12 +14,12 @@ body {
     box-sizing: border-box;
     color: white;
     background-color: #424242;
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-family: "Montserrat";
     letter-spacing: 1px;
 }
 
-p { 
+p, div { 
     text-align: center;
 }
 
@@ -39,4 +39,108 @@ p {
     border: 1px solid rgba(0,0,0, 0.5);
     border-radius: 6px;
     box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+}
+
+
+.u-margin-b {
+    margin-bottom: 2rem;
+}
+
+
+.rock,
+.paper,
+.scissors {
+    width: 10rem;
+    transition-duration: 0.5s;
+    cursor: pointer;
+
+}
+.rock:hover,
+.paper:hover,
+.scissors:hover {
+    transform: scale(1.25);
+}
+
+.rock {
+    position: absolute;
+    top: 35%;
+    left: 25%;
+}
+.paper {
+    position: absolute;
+    top: 35%;
+    left: 45%;
+}
+.scissors {
+    position: absolute;
+    top: 35%;
+    left: 65%;
+}
+
+.button {
+    border: 1px solid white;
+    border-radius: 6px;
+    padding: 0.5rem 2rem;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: white;
+    color: black;
+}
+
+
+.yes {
+    font-size: 4rem;
+    position: absolute;
+    top: 40%;
+    left: 25%;
+
+}
+
+.no {
+    font-size: 4rem;
+    position: absolute;
+    top: 40%;
+    right: 25%;
+}
+
+
+.left-pick,
+.right-pick {
+    position: absolute;
+    top: 35%;
+    width: 10rem;
+}
+
+.left-pick {
+    left: 25%;
+}
+.beats {
+    position: absolute;
+    top: 37%;
+    left: 47%;
+}
+.right-pick {
+    left: 65%;
+}
+
+.play-again {
+    position: absolute;
+    top: 50%;
+    left: 27%;
+}
+
+.play-yes {
+    position: absolute;
+    top: 65%;
+    left: 17%;
+    width: 20rem;
+}
+
+.play-no {
+    position: absolute;
+    top: 65%;
+    left: 57%;
+    width: 20rem;
 }
