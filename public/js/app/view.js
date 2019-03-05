@@ -81,6 +81,11 @@ const VIEW = (function(MDL) {
         appendP("No", "button", "play-no");
     };
 
+    const gameOverDisplay = () => {
+        appendP("Thanks for playing!!!", "u-margin-b");
+        appendP(`Player Score   : ${MDL.playerScore}`, "u-margin-b");
+        appendP(`Computer Score : ${MDL.compScore}`, "u-margin-b");
+    };
 
     const clearGameView = () => {
         elements.gameView.innerHTML = "";
@@ -94,6 +99,7 @@ const VIEW = (function(MDL) {
         displayWin,
         displayLose,
         askToPlayAgain,
+        gameOverDisplay,
     };
 } (MDL) );
 

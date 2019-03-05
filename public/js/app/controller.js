@@ -7,13 +7,13 @@ import { VIEW } from "./view";
 const CTRL = (function(MDL, VIEW) {
 
     const playAgain = () => {
-        console.log("here");
+        // Game returns here
         MDL.exited = false;
         return null;
     };
 
     const stopGame = () => {
-        console.log("here");
+        // Game returns here
        MDL.exited = true;
        return null;
     };
@@ -90,6 +90,11 @@ const CTRL = (function(MDL, VIEW) {
             elements.yesButton().addEventListener("click", () => {
                 resolve(userSelection());
             });
+            elements.noButton().addEventListener("click", () => {
+                // Game returns here
+                MDL.exited = true;
+                resolve(null);
+            });
         });
     };
 
@@ -105,8 +110,13 @@ const CTRL = (function(MDL, VIEW) {
 const gameLoop = () => {
     CTRL.initializeGame()
     .then(() => {
-        if(MDL.exited === false) return gameLoop();
-        else console.log("goodbye!!");
+        if(MDL.exited === false) {
+            return gameLoop();
+        } 
+        else {
+            VIEW.clearGameView()
+            VIEW.gameOverDisplay()
+        }
     });
 };
 
