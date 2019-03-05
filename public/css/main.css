@@ -144,3 +144,11 @@ p, div {
     left: 57%;
     width: 20rem;
 }
+
+.player-score {
+    margin-top: 15rem;
+}
+
+.comp-score {
+    margin-top: 5rem;
+}

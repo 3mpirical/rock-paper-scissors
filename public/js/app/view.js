@@ -83,8 +83,8 @@ const VIEW = (function(MDL) {
 
     const gameOverDisplay = () => {
         appendP("Thanks for playing!!!", "u-margin-b");
-        appendP(`Player Score   : ${MDL.playerScore}`, "u-margin-b");
-        appendP(`Computer Score : ${MDL.compScore}`, "u-margin-b");
+        appendP(`Player Score   : ${MDL.playerScore}`, "player-score", "u-margin-b");
+        appendP(`Computer Score : ${MDL.compScore}`, "comp-score", "u-margin-b");
     };
 
     const clearGameView = () => {

@@ -36,12 +36,14 @@ const CTRL = (function(MDL, VIEW) {
                 case(userPick === "rock" && compPick === "scissors"):
                 case(userPick === "paper" && compPick === "rock"):
                 case(userPick === "scissors" && compPick === "paper"):
+                MDL.playerScore ++;
                 VIEW.clearGameView();
-                VIEW.displayWin(userPick, compPick)
+                VIEW.displayWin(userPick, compPick);
                 break;
                 case(userPick === "rock" && compPick === "paper"):
                 case(userPick === "paper" && compPick === "scissors"):
                 case(userPick === "scissors" && compPick === "rock"):
+                MDL.compScore ++;
                 VIEW.clearGameView();
                 VIEW.displayLose(userPick, compPick);
                 break;
