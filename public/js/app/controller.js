@@ -56,7 +56,7 @@ const CTRL = (function(MDL, VIEW) {
                 elements.playNo().addEventListener("click",() => {
                     resolve(stopGame());
                 });
-            }, 5000);
+            }, 3000);
         });
     };
 

@@ -51,7 +51,7 @@ const VIEW = (function(MDL) {
     };
 
     const displayTie = (userPick, compPick) => {
-        appendP("!!! It's A Tie !!!", "u-margin-b");
+        appendP("It's A Tie!", "u-margin-b");
         appendP(`You selected ${userPick}, and the computer selected ${compPick}`);
         appendImage(`../img/${userPick}.svg`, "left-pick");
         appendP("equals", "beats");
@@ -59,7 +59,7 @@ const VIEW = (function(MDL) {
     };
 
     const displayWin = (userPick, compPick) => {
-        appendP("!!! You Win !!!", "u-margin-b");
+        appendP("You Win!", "u-margin-b");
         appendP(`You selected ${userPick}, and the computer selected ${compPick}`);
         appendImage(`../img/${userPick}.svg`, "left-pick");
         appendP("beats", "beats");
